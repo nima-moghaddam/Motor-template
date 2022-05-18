@@ -1,0 +1,197 @@
+body,
+html {
+  overflow-x: hidden !important;
+}
+
+/* typography */
+
+.bike-h4 {
+  color: #fe0064;
+  font-family: IRANSans-web;
+  font-weight: bold;
+}
+
+.bike-h5 {
+  background-color: #00a3fe;
+  color: white;
+  padding: 0px 10px;
+  text-align: center;
+  font-family: IRANSans-web;
+  font-weight: bold;
+}
+
+.bike-p {
+  color: #222222;
+  font-family: IRANSans-web;
+  font-weight: normal;
+}
+
+.bike-slider-header {
+  font-size: 18px;
+  color: #00669f;
+  font-family: IRANSans-web;
+  font-weight: 500;
+}
+
+/* sections */
+
+.bike-box1-bg {
+  background-color: #f9f9f9;
+}
+
+.bike-box2-bg {
+  background-color: #00a3fe;
+  height: 500px;
+  margin-bottom: 300px;
+}
+
+/* lists */
+
+.bike-ul1,
+.bike-ul2,
+.bike-ul3,
+.bike-ul4 {
+  list-style: none;
+  font-family: IRANSans-web;
+  font-weight: 500;
+}
+
+.bike-ul1 li {
+  margin-bottom: 8px;
+  margin-right: -3%;
+}
+
+.bike-ul2 li {
+  margin-bottom: 15px;
+  margin-right: -2rem;
+}
+
+.bike-ul3 li {
+  margin-bottom: 15px;
+}
+
+.bike-ul4 li {
+  margin-bottom: 15px;
+}
+
+/* img */
+
+.bike-header-img {
+  padding-left: 0;
+  padding-right: 0;
+  height: 412px;
+}
+
+.bike-phone1-img {
+  position: relative;
+  top: -5%;
+}
+
+/* buttons */
+
+.bike-btn-1 {
+  background-color: #00a3fe;
+  color: white;
+  font-size: 14px;
+  width: 206px;
+  height: 48px;
+}
+.bike-btn-1:hover {
+  color: white !important;
+}
+
+.bike-btn-2 {
+  background-color: white;
+  color: #00a3fe;
+  border: 1.2px solid #00a3fe;
+  font-size: 14px;
+  width: 206px;
+  height: 48px;
+}
+.bike-btn-2:hover {
+  color: #00a3fe !important;
+}
+
+/* swipers */
+
+.swiper {
+  width: 25vw;
+  position: relative;
+}
+
+.swiper-slide {
+  visibility: hidden;
+}
+
+.swiper-slide-active {
+  z-index: 10 !important;
+  visibility: visible !important;
+  transform: scale(0.9) !important;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.5;
+  z-index: 9 !important;
+  transform: scale(0.7) !important;
+  visibility: visible !important;
+}
+
+.swiper-slide-duplicate-next,
+.swiper-slide-duplicate-prev,
+.swiper-slide-duplicate-active,
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  visibility: hidden !important;
+}
+
+.swiper-button-prev1,
+.swiper-button-prev2 {
+  transform: translate(15%, -1350%);
+  z-index: 999;
+}
+
+.swiper-button-next1,
+.swiper-button-next2 {
+  transform: translate(-15%, -1450%);
+  z-index: 999;
+}
+
+/* Media queries */
+
+@media (max-width: 376px) {
+  .swiper-button-prev1,
+  .swiper-button-prev2 {
+    transform: translate(35%, -1350%);
+  }
+
+  .swiper-button-next1,
+  .swiper-button-next2 {
+    transform: translate(-35%, -1450%);
+  }
+}
+
+@media (max-width: 768px) {
+  .bike-box2-bg {
+    height: 400px;
+    margin-bottom: 150px;
+  }
+
+  .bike-analyze-icon {
+    width: 2rem;
+  }
+
+  .bike-phone1-img {
+    width: 12rem;
+  }
+
+  .swiper-button-prev1,
+  .swiper-button-prev2 {
+    transform: translate(35%, -1350%);
+  }
+
+  .swiper-button-next1,
+  .swiper-button-next2 {
+    transform: translate(-35%, -1450%);
+  }
+}
